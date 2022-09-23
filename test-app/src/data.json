@@ -1,16 +1,18 @@
 [
     {
         "id": "1",
-        "title": "Developer",
-        "firstName": "John",
-        "lastName": "Eric",
-        "salary": 5000
+        "Platform": "Canvas",
+        "Assignment": "Written Paper",
+        "Category": "Homework",
+        "Due Date": "September 23, 2022",
+        "Points": 50
     },
     {
         "id": "2",
-        "title": "Tester",
-        "firstName": "Andrew",
-        "lastName": "Johnson",
-        "salary": 6000
+        "Platform": "CS225",
+        "Assignment": "MP - Lists",
+        "Category": "MP",
+        "Due Date": "September 26, 2022",
+        "Points": 60
     }
 ]
