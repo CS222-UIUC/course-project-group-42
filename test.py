@@ -1,6 +1,5 @@
-from re import I
-import numpy as np
-import scrapy as sp
+# import numpy as np
+# import scrapy as sp
 from bs4 import BeautifulSoup as bs
 import requests as rq
 
