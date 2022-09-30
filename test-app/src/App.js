@@ -1,6 +1,8 @@
 import logo from './logo.svg';
 import employee from './data.json'
 import LocalFileRead from './Data.tsx';
+import Canvas from './Canvas.tsx';
+import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
 
 function App() {
@@ -8,7 +10,7 @@ function App() {
     <div className="App">
       <header className="App-header">
         <img src={logo} className="App-logo" alt="logo" />
-        <LocalFileRead style = {{textColor: 'green'}}></LocalFileRead>
+        <Canvas></Canvas>
         <p>
           Edit <code>src/App.js</code> and <a href = "https://www.youtube.com/">save to reload</a>.
         </p>
