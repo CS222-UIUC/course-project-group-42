@@ -1,6 +1,6 @@
 import logo from './logo.svg';
 import employee from './data.json'
-import LocalFileRead from './Data.tsx';
+import Assignment from './components/Assignment.tsx'
 import Canvas from './Canvas.tsx';
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
@@ -14,6 +14,7 @@ function App() {
         <p>
           Edit <code>src/App.js</code> and <a href = "https://www.youtube.com/">save to reload</a>.
         </p>
+        <Assignment></Assignment>
         <a
           className="App-link"
           href="https://reactjs.org"
