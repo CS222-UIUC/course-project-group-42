@@ -22,5 +22,4 @@ def printers(job_elements):
         print(title_element.text.strip())
         print(company_element.text.strip())
         print(location_element.text.strip())
-        print()
 main()
