@@ -1,5 +1,5 @@
 import React, { Component } from 'react';
-import employee from './data.json';
+import employee from '../data.json';
 
 class LocalFileRead extends Component {
     constructor(props) {
