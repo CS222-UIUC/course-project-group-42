@@ -6,6 +6,7 @@ const Assignment = ({ name, assignment, time, type }) => (
             <p style={{display:'inline-block', paddingInline: '50px'}}>{name}</p>
             <p style={{display:'inline-block', paddingInline: '50px'}}>Due: {time}</p>
             <p style={{display:'inline-block', paddingInline: '50px'}}> Type: {type }</p>
+            <input type ="checkbox"></input>
         </div>
     );
 
