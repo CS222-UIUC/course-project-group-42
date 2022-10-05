@@ -1,17 +1,13 @@
 import React, { Component } from 'react';
 
-class Assignment extends Component {
-    constructor(props) {
-        super(props);
-    }
+const Assignment = ({ name, assignment, time, type }) => (
+        <div style={{backgroundColor: 'lightblue', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px"}}>
+            <p style={{textAlign: 'left', display: 'inline-block', paddingInline: '50px'}}>{assignment}</p>
+            <p style={{display:'inline-block', paddingInline: '50px'}}>{name}</p>
+            <p style={{display:'inline-block', paddingInline: '50px'}}>Due: {time}</p>
+            <p style={{display:'inline-block', paddingInline: '50px'}}> Type: {type }</p>
+            <input type ="checkbox"></input>
+        </div>
+    );
 
-    render() {
-        return (<div style={{backgroundColor: 'blue', width: '750px', height: '50px'}}>
-            <p style={{textAlign: 'left', display:'inline-block'}}>CS 225</p>
-            <p style={{textAlign: 'center', display: 'inline-block', paddingInline: '260px'}}>MP Lists</p>
-        
-        </div>);
-    }
-}
-
-export default Assignment;
+export { Assignment };
