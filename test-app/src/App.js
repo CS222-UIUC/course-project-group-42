@@ -12,11 +12,11 @@ function App() {
     <div className="App">
       {/* <header className="App-header">
       </header> */}
-     <div style={{backgroundColor: "red", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+     <div style={{backgroundColor: "lightBlue", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
           <AddCourse/>
           <AddKeywords/>
       </div>
-      <div style={{backgroundColor: "blue", marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
+      <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
        <DateBox date = "October 5th, 2022"></DateBox>
        <Assignment name="CS 225" assignment = "MP Lists" time = "11:59 PM" type="MP"></Assignment>
        <Assignment name="RST 230" assignment = "Quiz 11" time = "10:00 PM" type="Quiz"></Assignment>
@@ -26,15 +26,14 @@ function App() {
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
      <DateBox date = "October 6th, 2022"></DateBox>
        <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
-     <DateBox date = "October 7th, 2022"></DateBox>
+     <DateBox date = "October 8th, 2022"></DateBox>
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> 
-       <DateBox date = "October 7th, 2022"></DateBox>
+      <DateBox date = "October 9th, 2022"></DateBox>
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
-       <DateBox date = "October 6th, 2022"></DateBox>
-       <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
-     <DateBox date = "October 7th, 2022"></DateBox>
+    <DateBox date = "October 10th, 2022"></DateBox>
+     <DateBox date = "October 11th, 2022"></DateBox>
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> 
-       <DateBox date = "October 7th, 2022"></DateBox>
+       <DateBox date = "October 12th, 2022"></DateBox>
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
     </div>
     
