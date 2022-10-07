@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 
 const Assignment = ({ name, assignment, time, type }) => (
-        <div style={{backgroundColor: 'lightblue', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px"}}>
-            <p style={{textAlign: 'left', display: 'inline-block', paddingInline: '50px'}}>{assignment}</p>
-            <p style={{display:'inline-block', paddingInline: '50px'}}>{name}</p>
-            <p style={{display:'inline-block', paddingInline: '50px'}}>Due: {time}</p>
-            <p style={{display:'inline-block', paddingInline: '50px'}}> Type: {type }</p>
+        <div style={{backgroundColor: 'lightblue', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row"}}>
+            <p style={{marginTop: "0", marginBottom: "0"}}>{assignment}</p>
+            <p style={{marginTop: "0", marginBottom: "0"}}>{name}</p>
+            <p style={{marginTop: "0", marginBottom: "0"}}>Due: {time}</p>
+            <p style={{marginTop: "0", marginBottom: "0"}}> Type: {type }</p>
             <input type ="checkbox"></input>
         </div>
     );
