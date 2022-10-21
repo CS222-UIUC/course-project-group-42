@@ -1,13 +1,10 @@
-import { Assignment } from './components/Assignment.tsx'
+import { Assignment } from './components/Assignment.js'
 import {AddCourse} from './components/AddCourse.tsx'
 import {AddKeywords} from './components/AddKeywords.tsx'
 import { DateBox } from './components/DateBox.tsx'
+import { AssignmentList } from './components/AssignmentList.tsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
-
-export function renderDate() {
-  return <DateBox date = "October 5th, 2022"></DateBox>
-}
 
 function App() {
   return (
@@ -19,7 +16,7 @@ function App() {
           <AddKeywords/>
       </div>
       <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
-      
+        <AssignmentList></AssignmentList>
        {/* <DateBox date = "October 5th, 2022"></DateBox>
        
        <Assignment name="RST 230" assignment = "Quiz 11" time = "10:00 PM" type="Quiz"></Assignment>
