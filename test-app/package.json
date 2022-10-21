@@ -37,6 +37,7 @@
     ]
   },
   "devDependencies": {
+    "json-loader": "^0.5.7",
     "typescript": "^4.8.3"
   }
 }

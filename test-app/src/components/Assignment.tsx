@@ -1,4 +1,5 @@
-import React, { Component } from 'react';
+import React, { useEffect } from 'react';
+import json from "/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/src/components/test/test.json"
 
 const Assignment = ({ name, assignment, time, type }) => (
         <div style={{backgroundColor: 'lightblue', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row"}}>

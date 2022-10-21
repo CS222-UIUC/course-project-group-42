@@ -1,11 +1,13 @@
-import logo from './logo.svg';
-import employee from './data.json'
 import { Assignment } from './components/Assignment.tsx'
 import {AddCourse} from './components/AddCourse.tsx'
 import {AddKeywords} from './components/AddKeywords.tsx'
 import { DateBox } from './components/DateBox.tsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
 import './App.css';
+
+export function renderDate() {
+  return <DateBox date = "October 5th, 2022"></DateBox>
+}
 
 function App() {
   return (
@@ -17,8 +19,9 @@ function App() {
           <AddKeywords/>
       </div>
       <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
-       <DateBox date = "October 5th, 2022"></DateBox>
-       <Assignment name="CS 225" assignment = "MP Lists" time = "11:59 PM" type="MP"></Assignment>
+      
+       {/* <DateBox date = "October 5th, 2022"></DateBox>
+       
        <Assignment name="RST 230" assignment = "Quiz 11" time = "10:00 PM" type="Quiz"></Assignment>
        <DateBox date = "October 6th, 2022"></DateBox>
        <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
@@ -34,7 +37,7 @@ function App() {
        <DateBox date = "October 11th, 2022"></DateBox>
        <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> 
        <DateBox date = "October 12th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
+       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> */}
     </div>
     
     
