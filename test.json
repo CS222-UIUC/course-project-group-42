@@ -1,0 +1,40 @@
+{
+    "Assignments": [{
+        "Date": "08/10/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Lists",
+        "Type": "MP",
+        "Due": "11:59"
+    }, {
+        "Date": "08/11/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Traversals",
+        "Type": "MP",
+        "Due": "11:59"
+    }, {
+        "Date": "08/11/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Mosaics",
+        "Type": "MP",
+        "Due": "11:59"
+    }, {
+        "Date": "08/11/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Rohan",
+        "Type": "MP",
+        "Due": "11:59"
+    }, {
+        "Date": "08/12/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Stupid",
+        "Type": "MP",
+        "Due": "11:59"
+    }, 
+    {
+        "Date": "08/12/2022",
+        "Name": "CS 225",
+        "Assignment": "MP Rachel",
+        "Type": "MP",
+        "Due": "11:59"
+    } ]
+}
