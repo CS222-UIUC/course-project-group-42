@@ -1,5 +1,5 @@
 import React from 'react';
-import json from "/Users/rachel/Documents/CS222/course-project-group-42/test-app/src/components/test/test.json"
+import json from "/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/src/components/test/test.json"
 
 const DateBox = ({date}) => (
     <div style={{backgroundColor: "lightgrey", marginBottom: '20px', marginLeft: '-15px', height: "40px", width: "1100px", borderRadius: '15px'}}>
