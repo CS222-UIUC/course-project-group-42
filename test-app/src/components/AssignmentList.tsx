@@ -8,12 +8,12 @@ const DateBox = ({date}) => (
 );
 
 
-const Assignment = ({ name, assignment, time, type }) => (
-    <div style={{backgroundColor: 'lightblue', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row"}}>
-        <p style={{marginTop: "0", marginBottom: "0"}}>{assignment}</p>
-        <p style={{marginTop: "0", marginBottom: "0"}}>{name}</p>
-        <p style={{marginTop: "0", marginBottom: "0"}}>Due: {time}</p>
-        <p style={{marginTop: "0", marginBottom: "0"}}> Type: {type }</p>
+const Assignment = ({ name, assignment, time, type, shift }) => (
+    <div style={{marginRight: shift, backgroundColor: '#296bd6', width: '1000px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row"}}>
+        <p style={{fontFamily: "Courier New", color: "white", marginTop: "0", marginBottom: "0"}}>{assignment}</p>
+        <p style={{fontFamily: "Courier New",color: "white",marginTop: "0", marginBottom: "0"}}>{name}</p>
+        <p style={{fontFamily: "Courier New",color: "white",marginTop: "0", marginBottom: "0"}}>Due: {time}</p>
+        <p style={{fontFamily: "Courier New",color: "white",marginTop: "0", marginBottom: "0"}}> Type: {type }</p>
         <input type ="checkbox"></input>
     </div>
 );
@@ -31,10 +31,9 @@ function AssignmentList() {
         console.log(data);
         console.log(id);
         if (id === 0) {
-            let currDate = data.Date;
             return <div key={id}>
             <DateBox date = {currDate}></DateBox>
-            <Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type}></Assignment>
+            <Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type} shift="0px"></Assignment>
         </div>
         }
         
@@ -42,12 +41,12 @@ function AssignmentList() {
             currDate = data.Date;
             return <div key={id}>
             <DateBox date = {currDate}></DateBox>
-            <Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type}></Assignment>
+            <div><Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type} shift="0px"></Assignment></div>
         </div>
         }
         else {
             return <div key={id}>
-            <Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type}></Assignment>
+            <Assignment name={data.Name} assignment = {data.Assignment} time = {data.Due} type={data.Type} shift="80px"></Assignment>
         </div>
         }
       
@@ -56,10 +55,4 @@ function AssignmentList() {
     </>);
 }
 
-{/* <div>
-        <DateBox date = "October 6th, 2022"></DateBox>
-        <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
-    </div> */}
-
 export { AssignmentList }; 
-// figure out if statement and setting a current date variable
