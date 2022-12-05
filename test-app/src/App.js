@@ -11,14 +11,15 @@ function App() {
   return (
     <div className="App">
      <div style={{backgroundColor: "#296bd6", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+          <h1 style={{color: "white", fontFamily: "Verdana", marginTop: "10px"}}>Canvas TODO List</h1>
           <AddCourse/>
-          <AddKeywords/>
-          <button onClick = {() => setButtonPopup(true)}>popup</button>
+          {/* <AddKeywords/> */}
+          {/* <button onClick = {() => setButtonPopup(true)}>popup</button> */}
       </div>
       <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
         <AssignmentList></AssignmentList>
     </div>
-    <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup>
+    {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup> */}
     
     </div>
   );
