@@ -10,7 +10,7 @@ function App() {
   const [showJson, setShowJson] = useState(null);
   return (
     <div className="App">
-     <div style={{backgroundColor: "#296bd6", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
+     <div style={{backgroundColor: "#296bd6", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", height:"140px"}}>
           <h1 style={{color: "white", fontFamily: "Verdana", marginTop: "10px"}}>Canvas TODO List</h1>
           <AddCourse setShowJson = {setShowJson}/>
           {/* <AddKeywords/> */}

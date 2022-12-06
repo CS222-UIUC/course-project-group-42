@@ -29,7 +29,11 @@ function AssignmentList(props) {
     
     if (showJson == null) {
         console.log("here")
-        return <div>No Assignments to Display</div>
+        return <div style={{textAlign: "center", marginTop: '50px'}}>
+                    <p>No Assignments to Display.</p> 
+                    <p>To link your Canvas account, generate an API token <a href="https://canvas.illinois.edu/profile/settings">here</a></p>
+                
+                </div>
     }
     console.log(showJson.length)
     let currDate = showJson["Assignments"][0].Date;

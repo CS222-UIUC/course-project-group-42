@@ -25,8 +25,8 @@ function AddCourse(props) {
 
     return (
         <div style={{ display: "flex", justifyContent: 'space-between', alignItems: "row", borderColor: 'red'}}>
-            <input onChange={handleChange} type = "text" id = "message" name = "message" style={{ backgroundColor: 'orange', width: '550px', height: '40px', borderRadius: '15px' }}  placeholder="Input API Token"></input>
-            <button onClick={fetchData}>Add Course</button>
+            <input onChange={handleChange} type = "text" id = "message" name = "message" style={{ backgroundColor: 'lightgrey', width: '550px', height: '40px', borderRadius: '15px' }}  placeholder="Input API Token"></input>
+            <button onClick={fetchData} style={{ backgroundColor:"white", marginLeft: "20px"}}>Add Course</button>
             {/* <button onChange={() => setButtonPopup(true)}>Add Course</button>
             <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup> */}
         </div>
