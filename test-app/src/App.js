@@ -7,17 +7,17 @@ import { useState } from 'react'
 import './App.css';
 
 function App() {
-  const [buttonPopup, setButtonPopup] = useState()
+  const [showJson, setShowJson] = useState(null);
   return (
     <div className="App">
      <div style={{backgroundColor: "#296bd6", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
           <h1 style={{color: "white", fontFamily: "Verdana", marginTop: "10px"}}>Canvas TODO List</h1>
-          <AddCourse/>
+          <AddCourse setShowJson = {setShowJson}/>
           {/* <AddKeywords/> */}
           {/* <button onClick = {() => setButtonPopup(true)}>popup</button> */}
       </div>
       <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
-        <AssignmentList></AssignmentList>
+        <AssignmentList showJson={showJson}></AssignmentList>
     </div>
     {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup> */}
     

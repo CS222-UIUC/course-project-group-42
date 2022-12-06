@@ -1,5 +1,5 @@
 import React from 'react';
-import json from "/Users/rachel/Documents/CS222/course-project-group-42/test-app/src/components/test/test.json"
+import json from "/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/src/components/test/test.json"
 
 const DateBox = ({ date }) => (
     <div style={{ backgroundColor: "lightgrey", marginBottom: '20px', marginLeft: '-15px', height: "40px", width: "1100px", borderRadius: '15px' }}>
@@ -19,20 +19,31 @@ const Assignment = ({ name, assignment, time, type, shift }) => (
 
 
 
-function AssignmentList() {
-    const obj = JSON.parse(JSON.stringify(json));
-    let currDate = obj["Assignments"][0].Date;
-    console.log(currDate);
-
+function AssignmentList(props) {
+    const {showJson} = props
+    // const obj = JSON.parse(JSON.stringify(json));
+    // console.log(showJson)
+    // console.log(obj)
+    // console.log(showJson);
+    console.log(showJson)
+    
+    if (showJson == null) {
+        console.log("here")
+        return <div>No Assignments to Display</div>
+    }
+    console.log(showJson.length)
+    let currDate = showJson["Assignments"][0].Date;
+    // console.log(currDate);
+    
     return (
-
         <>
-            {obj["Assignments"].map((data, id) => {
-                console.log(data);
-                console.log(id);
+            
+            {showJson["Assignments"].map((data, id) => {
+                // console.log(data);
+                // console.log(id);
                 if (data.Date !== "-1") {
                     const course = data.Name.split("-")[1];
-                    console.log(course)
+                    // console.log(course)
                     if (id === 0) {
                         return <div key={id}>
                             <DateBox date={currDate}></DateBox>
@@ -53,7 +64,7 @@ function AssignmentList() {
                         </div>
                     }
                 } else {
-                    console.log(data.Date)
+                    // console.log(data.Date)
                     return "";
                 }
 
