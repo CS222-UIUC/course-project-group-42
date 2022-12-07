@@ -8,40 +8,54 @@ const DateBox = ({ date }) => (
 );
 
 const Assignment = ({ name, assignment, time, type, shift }) => (
-    <div style={{marginRight: shift, backgroundColor: '#296bd6', width: '1050px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row"}}>
-        <p style={{fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0"}}>{assignment}</p>
-        <p style={{fontFamily: "Verdana",color: "white",marginTop: "0", marginBottom: "0"}}>{name}</p>
-        <p style={{fontFamily: "Verdana",color: "white",marginTop: "0", marginBottom: "0"}}>Due: {time}</p>
+    <div style={{ marginRight: shift, backgroundColor: '#296bd6', width: '1050px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row" }}>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>{assignment}</p>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>{name}</p>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>Due: {time}</p>
         {/* <p style={{fontFamily: "Verdana",color: "white",marginTop: "0", marginBottom: "0"}}> Type: {type }</p> */}
-        <input type ="checkbox"></input>
+        <input type="checkbox"></input>
     </div>
 );
 
+function generateNoDateAssign(notDated) {
+    console.log("calledNotDated")
+    console.log(notDated.length);
+    return (
+        <>
+            <DateBox date="N/A"></DateBox>
+            {notDated.map((data, id) => {
+                
+                return <div key={id}><Assignment name={data.Name.split("-")[1]} assignment={data.Assignment} time="n/a" type={data.Type} shift="35px"></Assignment></div>
+            })}
+        </>
+    )
+}
 
 
 function AssignmentList(props) {
-    const {showJson} = props
+    const { showJson } = props
     // const obj = JSON.parse(JSON.stringify(json));
     // console.log(showJson)
     // console.log(obj)
     // console.log(showJson);
     console.log(showJson)
-    
+
     if (showJson == null) {
         console.log("here")
-        return <div style={{textAlign: "center", marginTop: '50px'}}>
-                    <p>No Assignments to Display.</p> 
-                    <p>To link your Canvas account, generate an API token <a href="https://canvas.illinois.edu/profile/settings">here</a></p>
-                
-                </div>
+        return <div style={{ textAlign: "center", marginTop: '50px' }}>
+            <p>No Assignments to Display.</p>
+            <p>To link your Canvas account, generate an API token <a href="https://canvas.illinois.edu/profile/settings">here</a></p>
+
+        </div>
     }
     console.log(showJson.length)
     let currDate = showJson["Assignments"][0].Date;
+    let notDated: any[] = [];
     // console.log(currDate);
-    
+
     return (
         <>
-            
+
             {showJson["Assignments"].map((data, id) => {
                 // console.log(data);
                 // console.log(id);
@@ -69,10 +83,13 @@ function AssignmentList(props) {
                     }
                 } else {
                     // console.log(data.Date)
+                    notDated.push(data);
                     return "";
                 }
 
             })}
+
+            {generateNoDateAssign(notDated)}
 
         </>);
 }
