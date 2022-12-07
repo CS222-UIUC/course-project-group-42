@@ -1,5 +1,7 @@
-import React from 'react';
+import React, { useState } from 'react';
 import json from "/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/src/components/test/test.json"
+
+
 
 const DateBox = ({ date }) => (
     <div style={{ backgroundColor: "lightgrey", marginBottom: '20px', marginLeft: '-15px', height: "40px", width: "1100px", borderRadius: '15px' }}>
@@ -7,15 +9,22 @@ const DateBox = ({ date }) => (
     </div>
 );
 
-const Assignment = ({ name, assignment, time, type, shift }) => (
+function Assignment({ name, assignment, time, type, shift }) {
+    const [checked, setChecked] = React.useState(false);
+    function handleChange() {
+        setChecked(!checked);
+    }
+    
+    return (
     <div style={{ marginRight: shift, backgroundColor: '#296bd6', width: '1050px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row" }}>
-        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>{assignment}</p>
-        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>{name}</p>
-        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0" }}>Due: {time}</p>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>{assignment}</p>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>{name}</p>
+        <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>Due: {time}</p>
         {/* <p style={{fontFamily: "Verdana",color: "white",marginTop: "0", marginBottom: "0"}}> Type: {type }</p> */}
-        <input type="checkbox"></input>
+        <input type="checkbox" onChange={handleChange}></input>
     </div>
-);
+    )
+};
 
 function generateNoDateAssign(notDated) {
     console.log("calledNotDated")
@@ -34,11 +43,7 @@ function generateNoDateAssign(notDated) {
 
 function AssignmentList(props) {
     const { showJson } = props
-    // const obj = JSON.parse(JSON.stringify(json));
     // console.log(showJson)
-    // console.log(obj)
-    // console.log(showJson);
-    console.log(showJson)
 
     if (showJson == null) {
         console.log("here")
@@ -48,20 +53,16 @@ function AssignmentList(props) {
 
         </div>
     }
-    console.log(showJson.length)
+    // console.log(showJson.length)
     let currDate = showJson["Assignments"][0].Date;
     let notDated: any[] = [];
-    // console.log(currDate);
 
     return (
         <>
 
             {showJson["Assignments"].map((data, id) => {
-                // console.log(data);
-                // console.log(id);
                 if (data.Date !== "-1") {
                     const course = data.Name.split("-")[1];
-                    // console.log(course)
                     if (id === 0) {
                         return <div key={id}>
                             <DateBox date={currDate}></DateBox>
@@ -82,7 +83,6 @@ function AssignmentList(props) {
                         </div>
                     }
                 } else {
-                    // console.log(data.Date)
                     notDated.push(data);
                     return "";
                 }

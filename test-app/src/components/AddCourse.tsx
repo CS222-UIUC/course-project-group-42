@@ -3,7 +3,7 @@ import React, { useRef, useState } from 'react';
 
 function AddCourse(props) {
     const [fetchJson, setFetchJson] = useState();
-    const {setShowJson} = props
+    const {setShowJson} = props;
 
     function handleChange(event) {
         setFetchJson(event.target.value);
@@ -14,7 +14,6 @@ function AddCourse(props) {
         fetch('http://127.0.0.1:5000/upload_data/' + fetchJson)
             .then((response) => response.json())
             .then((data) => setShowJson(data));
-
     }
 
 
