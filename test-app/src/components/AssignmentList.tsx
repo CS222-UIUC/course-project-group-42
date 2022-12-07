@@ -16,7 +16,7 @@ function Assignment({ name, assignment, time, type, shift }) {
     }
     
     return (
-    <div style={{ marginRight: shift, backgroundColor: '#296bd6', width: '1050px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row" }}>
+    <div style={{ marginRight: shift, backgroundColor: checked ? 'lightblue' : '#296bd6', width: '1050px', height: '50px', borderRadius: '15px', marginBottom: "20px", display: "flex", alignItems: "center", justifyContent: "space-around", flexDirection: "row" }}>
         <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>{assignment}</p>
         <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>{name}</p>
         <p style={{ fontFamily: "Verdana", color: "white", marginTop: "0", marginBottom: "0", textDecoration: checked ? 'line-through' : 'none'}}>Due: {time}</p>
