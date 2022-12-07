@@ -5,7 +5,7 @@ import json from "/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/
 
 const DateBox = ({ date }) => (
     <div style={{ backgroundColor: "lightgrey", marginBottom: '20px', marginLeft: '-15px', height: "40px", width: "1100px", borderRadius: '15px' }}>
-        <p style={{ marginTop: "7px", marginLeft: '15px', color: 'black', marginBottom: "0" }}><b>Date: {date}</b></p>
+        <p style={{ marginTop: "10px", marginLeft: '15px', color: 'black', marginBottom: "0", paddingTop: "7px" }}><b>Date: {date}</b></p>
     </div>
 );
 
