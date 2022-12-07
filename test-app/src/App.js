@@ -1,53 +1,27 @@
-import logo from './logo.svg';
-import employee from './data.json'
-import { Assignment } from './components/Assignment.tsx'
 import {AddCourse} from './components/AddCourse.tsx'
 import {AddKeywords} from './components/AddKeywords.tsx'
-import { DateBox } from './components/DateBox.tsx'
+import { AssignmentList } from './components/AssignmentList.tsx'
 import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+//import { Popup } from '/Users/rohan_v/Desktop/CS222/course-project-group-42/test-app/src/components/Popup.tsx'
+import { useState } from 'react'
 import './App.css';
 
 function App() {
+  const [showJson, setShowJson] = useState(null);
   return (
     <div className="App">
-      {/* <header className="App-header">
-      </header> */}
-     <div style={{backgroundColor: "lightBlue", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column"}}>
-          <AddCourse/>
-          <AddKeywords/>
+     <div style={{backgroundColor: "#296bd6", position: "fixed", top: 0, width: "100%", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", height:"140px"}}>
+          <h1 style={{color: "white", fontFamily: "Verdana", marginTop: "10px"}}>Canvas TODO List</h1>
+          <AddCourse setShowJson = {setShowJson}/>
+          {/* <AddKeywords/> */}
+          {/* <button onClick = {() => setButtonPopup(true)}>popup</button> */}
       </div>
       <div style={{marginTop:"100px", display: "flex", alignItems: "center", justifyContent: "center", flexDirection: "column", paddingTop: "50px"}}>
-       <DateBox date = "October 5th, 2022"></DateBox>
-       <Assignment name="CS 225" assignment = "MP Lists" time = "11:59 PM" type="MP"></Assignment>
-       <Assignment name="RST 230" assignment = "Quiz 11" time = "10:00 PM" type="Quiz"></Assignment>
-       <DateBox date = "October 6th, 2022"></DateBox>
-       <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
-       <DateBox date = "October 7th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
-       <DateBox date = "October 6th, 2022"></DateBox>
-       <Assignment name="CS 233" assignment = "Midterm" time = "8:00 AM" type="Exam"></Assignment>
-       <DateBox date = "October 8th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> 
-       <DateBox date = "October 9th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
-       <DateBox date = "October 10th, 2022"></DateBox>
-       <DateBox date = "October 11th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment> 
-       <DateBox date = "October 12th, 2022"></DateBox>
-       <Assignment name="STAT 400" assignment = "Problem Set" time = "11:59 PM" type="HW"></Assignment>
+        <AssignmentList showJson={showJson}></AssignmentList>
     </div>
-    
+    {/* <Popup trigger={buttonPopup} setTrigger={setButtonPopup}></Popup> */}
     
     </div>
-
-    // add a ToDo list component
-    // add NavBar component
-    // When user clicks add course 
-    // onClick component to make <P> text in assignment strikethrough 
-
-    // parse a JSON Locally
-    // try to host a MongoDB non-relational database
-    // understand how server protocols work (look into it)
   );
 }
 
