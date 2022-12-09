@@ -15,7 +15,7 @@ The third and final component is the python backend. This component handles crea
 
 # Reinstallation
 
-To reinstall this application, download all of the documents in this GitHub to your local code editor. In the “test-app” directory, run `npm install` and `npm start` in the terminal which will then pull up the site in a browser. From there, enter your Canvas API token which will then pull up a complete list of your assignments in Canvas sorted by date.
+To reinstall this application, download all of the documents in this GitHub to your local code editor. In the “test-app” directory, run `yarn start` and `flask run` in the terminal which will then pull up the site in a browser. From there, enter your Canvas API token which will then pull up a complete list of your assignments in Canvas sorted by date.
 
 # Project Roles
 |Rohan Shah  | Ben Taylor |Rachel Samojedny |Rohan Vanjani | 
