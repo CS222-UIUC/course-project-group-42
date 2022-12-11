@@ -94,4 +94,3 @@ def main(token):
     return assignment_dictionary
 
 
-# main("14559~DsuzfWWuRMkfaRPoGNfh40bJT9LYrEulLxOssXVmRV9tqDhTm5O4shSAJPiFzzCM")
