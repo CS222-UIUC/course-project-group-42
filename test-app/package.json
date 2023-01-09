@@ -1,6 +1,7 @@
 {
   "name": "test-app",
   "version": "0.1.0",
+  "homepage": "https://cs222-uiuc.github.io/course-project-group-42/",
   "private": true,
   "dependencies": {
     "@testing-library/jest-dom": "^5.16.5",
@@ -14,6 +15,8 @@
     "write-json-file": "^5.0.0"
   },
   "scripts": {
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
@@ -39,6 +42,7 @@
   },
   "devDependencies": {
     "@types/node": "^18.11.11",
+    "gh-pages": "^4.0.0",
     "json-loader": "^0.5.7",
     "typescript": "^4.8.3"
   }
