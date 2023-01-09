@@ -1,0 +1,18 @@
+[
+    {
+        "id": "1",
+        "Platform": "Canvas",
+        "Assignment": "Written Paper",
+        "Category": "Homework",
+        "Due Date": "September 23, 2022",
+        "Points": 50
+    },
+    {
+        "id": "2",
+        "Platform": "CS225",
+        "Assignment": "MP - Lists",
+        "Category": "MP",
+        "Due Date": "September 26, 2022",
+        "Points": 60
+    }
+]

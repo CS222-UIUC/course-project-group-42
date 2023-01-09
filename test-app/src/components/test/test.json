@@ -1,0 +1,284 @@
+{
+    "Assignments": [
+        {
+            "Date": "09/08/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "RSO Assignment",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "09/15/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Bucket List & Reflection",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "09/15/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Collegeview Reflection",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "09/27/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Individualized (One-on-One) Meeting with Intern",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "09/29/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Resume",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "10/06/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Empathy Interviews",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "10/15/2021",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Final Project - Submit Link",
+            "Type": "Canvas Event",
+            "Due": "20:00"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Roll Call Attendance",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Week 1 Attendance_Participation",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2021-LAS 101-Design Your First Year Experience-(All Sections)",
+            "Assignment": "Week 2 A & P",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "09/03/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Project Proposal Rough Draft",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "09/10/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Project Proposal Final Draft",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/01/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 1",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/08/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 2",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/15/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 3",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/22/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 4",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/29/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 5",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "11/05/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 6",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "11/12/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 7",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "11/19/2022",
+            "Name": "Fall 2022-CS 222-Software Design Lab-Section SL1",
+            "Assignment": "Weekly Review 8",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  2",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  3",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  4",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  5",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  6",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  7",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  8",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  9",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Group Activity  10",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-CS 357-Numerical Methods I-Sections M, N, ZJ1",
+            "Assignment": "Quiz 1",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        },
+        {
+            "Date": "10/24/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "Course Information Quiz",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/24/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "APA Style Quiz",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "10/31/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "2.3 | Week 2 Quiz",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "11/07/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "3.3 | Week 3 Quiz",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "11/14/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "4.3 | Week 4 Quiz",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "11/21/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "5.3 | Week 5 Quiz",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "12/05/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "6.3 | Week 6 Quiz",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "12/12/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "7.3 | Week 7 Quiz",
+            "Type": "Canvas Event",
+            "Due": "05:59"
+        },
+        {
+            "Date": "10/31/2022",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": " 2.4 | Week 2 Packback Discussion",
+            "Type": "Canvas Event",
+            "Due": "04:59"
+        },
+        {
+            "Date": "-1",
+            "Name": "Fall 2022-RST 242-Nature and American Culture-Section ONB",
+            "Assignment": "Packback (due 10-30-2022)",
+            "Type": "Canvas Event",
+            "Due": "-1"
+        }
+    ]
+}
